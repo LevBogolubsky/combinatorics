@@ -7,9 +7,6 @@ from math import ceil
 from fractions import gcd
 
 from common import ChromaticNumberLowerEstimate, \
-                   load_prime_powers, \
-                   format_max, \
-                   get_command_line_args, \
                    do_calc
 
 

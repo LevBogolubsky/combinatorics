@@ -7,9 +7,6 @@ from math import ceil
 from fractions import gcd
 
 from common import ChromaticNumberLowerEstimate, \
-                   load_prime_powers, \
-                   format_max, \
-                   get_command_line_args, \
                    do_calc
 
 
@@ -67,8 +64,6 @@ def calculate_alpha_upper_estimate(n, q, d, digits, throw_out_monoms):
         elif digits == 2:
             for m in range(q):
                 if m <= n:
-                    invertible = False
-
                     if abs(gcd(d - m, q)) == 1:
                         if m + 1 <= q - 1:
                             continue
